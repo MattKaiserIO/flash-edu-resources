@@ -10,7 +10,7 @@
   <body>
     <p>Please wait a few seconds for file to load.</p>
     <p>To view larger: right-click on animation and select "Enter fullscreen".</p>
-    <div id="container"></div>
+    <div></div>
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
         window.addEventListener("load", (event) => {
@@ -19,6 +19,8 @@
             const container = document.getElementById("container");
             container.appendChild(player);
             player.load("content/flash/oscilloscope_description_tutorial_sounds_frequency.swf");
+            player.style.width="800px";
+            player.style.height="600px";
         });
     </script>
     <script src="src/js/ruffle-nightly-2021_09_13/ruffle.js"></script>    
