@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
   </head>
   <body>
+    <p>Please wait a few seconds for file to load.</p>
+    <p>Right click on animation -> "Enter Fullscreen" to view larger.</p>
     <div id="container"></div>
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
@@ -17,6 +19,8 @@
             const container = document.getElementById("container");
             container.appendChild(player);
             player.load("content/flash/Doppler_Nav.swf");
+            player.style.width="800px";
+            player.style.height="600px";
         });
     </script>
     <script src="src/js/ruffle-nightly-2021_09_13/ruffle.js"></script>    
