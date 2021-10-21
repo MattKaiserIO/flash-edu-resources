@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How Planets Form</title>
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 2em;
+        }
+        p {
+            max-width: 78ch;
+            line-height: 1.4em;
+        }
+        img {
+            border: 2px solid black;
+            padding: 2px;
+        }
+        .caption {
+            font-style: italic;
+            margin-top: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <p>Please wait a few seconds for Flash files to load.</p>
+    <h1>How Planets Form</h1>
+    <p><strong>Summary:</strong> The terrestrial planets formed close to the Sun where temperatures were well suited for rock and metal to condense. The jovian planets formed outside what is called the <a href="#note--frost-line">frost line<sup>1</sup></a>, where temperatures were low enough for ice condensation.</p>
+    <h2>Overview</h2>
+    <p>In the previous section, we discussed the formation of a star via the collapse of a big cloud of gas. It is worth noticing that the eight planets in our solar system make up two different groups; the four planets closest to the Sun make up the rocky terrestrial planets and the four planets farthest from the Sun make up the gaseous jovian planets. Why do objects that formed from the same cloud of gas have different compositions? The answer lies in where these objects formed in relation to the parent star, our Sun.</p>
+    <p>After the <a href="#note--solar-nebula">solar nebula<sup>2</sup></a> collapsed to form our Sun, a disk of material formed around the new star. The temperature across this <a href="#note--protoplanetary-disk">protoplanetary disk<sup>3</sup></a> was not uniform. Since different materials condense at different temperatures, our solar system formed different types of planets. The dividing line for the different planets in our solar system is called the frost line. In the simulation below, notice where hydrogen and helium condense in the solar nebula.</p>
+    <div id="container1"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container1");
+            container.appendChild(player);
+            player.load("content/flash/condensate_regions_in_disk.swf");
+            player.style.width="800px";
+            player.style.height="600px";
+        });
+    </script>
+    <p class="caption">To view larger: right-click on animation and select "Enter fullscreen".</p>
+    <h2>Terrestrial Planet Formation</h2>
+    <img src="src/img/planet_steps.jpg" />
+    <p>Hydrogen compounds, such as water and methane, typically condense at low temperatures, and remain gaseous inside the frost line where temperatures are higher. The heavier rocky and metallic materials are better suited to condense at higher temperatures. Thus, the inner planets are made almost entirely of rock and metal and form the group known as the terrestrial planets.</p>
+    <img src="src/img/frost_line.jpg" />
+    <p class="caption">Diagram of the frost line</p>
+    <h3>How did the terrestrial planets form?</h3>
+    <p>After the heavier elements and minerals condensed into solid bits of rock, they all orbited the Sun at about the same speed. As you can imagine, collisions of objects moving at the same speed are less destructive than those of objects moving at different speeds. Thus, when rocks orbiting the Sun move close to one another, they stick together more often than they destroy each other. These pieces gradually grow larger in a process called accretion. Once they are large enough, gravity forces them into spherical shapes.</p>
+    <div id="container2"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container2");
+            container.appendChild(player);
+            player.load("content/flash/accretion_and_planets.swf");
+            player.style.width="800px";
+            player.style.height="600px";
+        });
+    </script>
+    <p class="caption">To view larger: right-click on animation and select "Enter fullscreen".</p>
+    <h2>Jovian Planet Formation</h2>
+    <img src="src/img/jovian_steps.jpg" />
+    <p>Outside the frost line, temperatures are cooler and hydrogen compounds are able to condense into ices. Rock and metal are still present in the outer solar system, but both are outnumbered and outweighed by the hydrogen compounds. Thus, the <a href="#note--planetismals">planetesimals<sup>4</sup></a> that formed in the outer solar system are composed primarily of hydrogen compounds with traces of rock and metal. Hydrogen and helium do not condense in the solar nebula, and are rather abundant in the large orbits of objects in the outer solar system. As the outer planetesimals continued to grow larger, the strength of their gravity grew stronger. Surrounding material, primarily hydrogen and helium, is increasingly attracted to the planetesimals as they grow in size and the planetesimals accrete more and more.</p>
+    <img src="src/img/material.jpg" />
+    <p class="caption">Materials in the solar nebula</p>
+    <h3>How did the Jovian planets form?</h3>
+    <p>The jovian planetesimals soon became the icy, dense cores we see today surrounded by huge clouds of accreted gas. Much like the collapse of the solar nebula, these balls of gas can grow large enough to induce gravitational collapse. Remember from the star formation section that gravitational collapse involves heating up, flattening out and rotating faster. It is possible that as the jovian protoplanets collapsed, smaller particles in the surrounding disk formed into some of the moons that now orbit the individual outer planets. This makes sense, since the outer planets all have many moons and rings that orbit in the same plane, just like the planets in our solar system orbit the Sun in the same plane.</p>
+    <img src="src/img/gascloud.jpg" />
+    <p class="caption">Solar nebula</p>
+    <hr />
+    <h2>Notes</h2>
+    <p id="note--frost-line"><sup>1</sup> <strong>Frost Line:</strong> The boundary in the solar nebula beyond which ices could condense; only metals and rocks could condense within the frost line.</p>
+    <p id="note--solar-nebula"><sup>2</sup> <strong>Solar Neubla:</strong> The piece of interstellar cloud from which our own solar system formed.</p>
+    <p id="note--protoplanetary-disk"><sup>3</sup> <strong>Protoplanetary Disk:</strong> A disk of material surrounding a young star (or protostar) that eventually forms planets.</p>
+    <p id="note--planetismals"><sup>4</sup> <strong>Planetismals:</strong> The building blocks of planets, formed by accretion in the solar nebula.</p>
+    <p>Adapted from <a href="https://lasp.colorado.edu/outerplanets/solsys_planets.php" target="_noblank" rel="noopener noreferrer">source material</a> by the Laboratory for Atmospheric and Space Physics at the University of Colorado at Boulder</p>
+    <script src="src/js/ruffle-nightly-2021_09_13/ruffle.js"></script>    
+  </body>
+</html>
