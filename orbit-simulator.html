@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orbit Simulator</title>
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+  </head>
+  <body>
+    <p>Please wait a few seconds for file to load.</p>
+    <p>To view larger: right-click on animation and select "Enter fullscreen".</p>
+    <div id="container"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("content/flash/gravity-final-new.swf");
+            player.style.width="800px";
+            player.style.height="600px";
+        });
+    </script>
+    <script src="src/js/ruffle-nightly-2021_09_13/ruffle.js"></script>    
+  </body>
+</html>
